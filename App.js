@@ -8,7 +8,7 @@ export default function App() {
   const [weather, setWeather] = useState(null);
   const getWeather = async() => {
     try {
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${API_KEY}`
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=41.14&lon=-8.61&appid=${API_KEY}`
       const response = await fetch(url);
       const json = await response.json();
       setWeather(json.weather[0]);
