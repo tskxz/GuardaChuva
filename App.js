@@ -11,6 +11,8 @@ export default function App() {
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=41.14&lon=-8.61&appid=${API_KEY}`
       const response = await fetch(url);
       const json = await response.json();
+      weth = json.weather[0].main
+      console.log(weth)
       setWeather(json.weather[0]);
     } catch(error) {
       console.log(error)
