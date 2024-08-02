@@ -31,7 +31,7 @@ export default function App() {
         weather ? (
           <View style={styles.itemContainer}>
             <Text style={styles.item}>
-              {weather.main === 'Clear' ? 'Não é preciso guarda chuva! ❌': 'Traz guarda chuva! ☂️'}
+              {weather.main === 'Rain' ? 'Traz guarda chuva! ☂️': 'Não é preciso guarda chuva! ❎'}
             </Text>
           </View>
         ) : null
